@@ -1,0 +1,46 @@
+.home {
+    height: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('assets/backgrounds/mountain-home.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: top center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home h1 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 9rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #bae7ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.home p {
+    font-family: 'Archivo', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 1px;
+    line-height: 5em;
+}
+
+.home a{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #bae7ff;
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 15px 35px;
+    border-radius: 35px;
+}
