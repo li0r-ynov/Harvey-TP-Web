@@ -1,19 +1,30 @@
-document.getElementById("journey-button");
-
 const journeyButton = document.getElementById("journey-button");
 
-if (localStorage.getItem("day6Completed") === "true") {
-    journeyButton.textContent = "CONTINUE YOUR JOURNEY";
-    journeyButton.href = "pages/DAY 7 - THE ANNOUNCEMENT.html";
-} else {
-    journeyButton.textContent = "START YOUR JOURNEY";
-    journeyButton.href = "pages/DAY 1 - THE ARRIVAL.html";
+if (journeyButton) {
+
+    if (localStorage.getItem("day6Completed") === "true") {
+
+        journeyButton.textContent = "CONTINUE YOUR JOURNEY";
+        journeyButton.href = "pages/DAY 7 - THE ANNOUNCEMENT.html";
+
+    } else {
+
+        journeyButton.textContent = "START YOUR JOURNEY";
+        journeyButton.href = "pages/DAY 1 - THE ARRIVAL.html";
+
+    }
+
 }
 
-journeyButton.textContent = "CONTINUE YOUR JOURNEY";
+const finishDay6Button = document.getElementById("finish-day6");
 
-journeyButton.href = "pages/DAY 7 - THE ANNOUNCEMENT.html";
+if (finishDay6Button) {
 
-localStorage.setItem("day6Completed", "true");
+    finishDay6Button.addEventListener("click", function () {
 
-localStorage.getItem("day6Completed");
+        localStorage.setItem("day6Completed", "true");
+        console.log("Day 6 completed");
+
+    });
+
+}
