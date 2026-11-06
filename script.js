@@ -12,6 +12,10 @@ if (journeyButton) {
         journeyButton.textContent = "START YOUR JOURNEY";
         journeyButton.href = "pages/DAY 1 - THE ARRIVAL.html";
 
+        journeyButton.addEventListener("click", function () {
+            localStorage.removeItem("day6Completed");
+        });
+
     }
 
 }
