@@ -44,3 +44,22 @@
     padding: 15px 35px;
     border-radius: 35px;
 }
+
+.home a[hidden] {
+    display: none;
+}
+
+.home a#continue-button {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.home a#reset-progress-button {
+    margin-top: 20px;
+    margin-bottom: 330px;
+}
+
+.home a#reset-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
