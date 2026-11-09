@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -34,7 +34,7 @@
     line-height: 5em;
 }
 
-.home a{
+.home a {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background-color: #bae7ff;
@@ -62,4 +62,158 @@
 .home a#reset-button {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.scene-locals {
+    min-height: 100vh;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(rgba(7, 153, 221, 0.577), rgba(33, 6, 241, 0.626)),
+        url('assets/backgrounds/mountain.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.scene-locals h1 {
+    color: #bae7ff;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.scene-locals h2 {
+    color: #bae7ff;
+    font-size: 1.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+}
+
+.scene-introduction,
+.dialogue-scene,
+.scene-conclusion {
+    max-width: 900px;
+    margin: 0 auto 45px;
+}
+
+.scene-introduction p,
+.scene-conclusion p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #e8f5ff;
+}
+
+
+.dialogue-scene {
+    padding: 35px;
+    background: rgba(9, 97, 148, 0.25);
+    border: 1px solid rgba(220, 245, 255, 0.65);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.dialogue {
+    background: rgba(14, 55, 47, 0.25);
+    border-left: 4px solid #bae7ff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dialogue:hover {
+    background: rgba(2, 253, 203, 0.263);
+    transform: translateX(5px);
+}
+
+.dialogue strong {
+    color: #ffffff;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+}
+
+.dialogue p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+
+.scene-conclusion {
+    text-align: center;
+}
+
+
+.scene-conclusion a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 30px;
+    padding: 16px 35px;
+
+    background: #bae7ff;
+    color: #071725;
+
+    border: 2px solid #bae7ff;
+    border-radius: 40px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 1rem;
+    font-weight: 800;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+.scene-conclusion a::after {
+    content: "➜";
+    font-size: 1.3rem;
+}
+
+
+.scene-conclusion a:hover {
+    background: transparent;
+    color: #bae7ff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(186, 231, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+
+    .scene-locals {
+        padding: 35px 15px;
+        background-attachment: scroll;
+    }
+
+    .dialogue-scene {
+        padding: 20px;
+    }
+
+    .dialogue {
+        padding: 15px;
+    }
+
+    .scene-introduction p,
+    .scene-conclusion p {
+        font-size: 1rem;
+    }
+
 }
