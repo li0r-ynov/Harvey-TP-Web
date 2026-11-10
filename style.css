@@ -1,219 +1,376 @@
 .home {
-    height: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url('assets/backgrounds/mountain-home.jpeg');
-    display: flex;
-    flex-direction: column;
-    justify-content: top center;
-    align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/backgrounds/mountain-home.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: top center;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .home h1 {
-    font-family: 'Archivo', sans-serif;
-    font-size: 9rem;
-    font-weight: 800;
-    font-style: italic;
-    color: #bae7ff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #bae7ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 .home p {
-    font-family: 'Archivo', sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: 1px;
-    line-height: 5em;
+  font-family: "Archivo", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 1px;
+  line-height: 5em;
 }
 
 .home a {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background-color: #bae7ff;
-    color: #000;
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 15px 35px;
-    border-radius: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #bae7ff;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 15px 35px;
+  border-radius: 35px;
 }
 
 .home a[hidden] {
-    display: none;
+  display: none;
 }
 
 .home a#continue-button {
-    margin-top: auto;
-    margin-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .home a#reset-progress-button {
-    margin-top: 20px;
-    margin-bottom: 330px;
+  margin-top: 20px;
+  margin-bottom: 330px;
 }
 
 .home a#reset-button {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .scene-locals {
-    min-height: 100vh;
-    padding: 60px 20px;
+  min-height: 100vh;
+  padding: 60px 20px;
 
-    background:
-        linear-gradient(rgba(7, 153, 221, 0.577), rgba(33, 6, 241, 0.626)),
-        url('assets/backgrounds/mountain.jpeg');
+  background:
+    linear-gradient(rgba(7, 153, 221, 0.577), rgba(33, 6, 241, 0.626)),
+    url("assets/backgrounds/mountain.jpeg");
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
-    color: white;
-    font-family: 'Archivo', sans-serif;
+  color: white;
+  font-family: "Archivo", sans-serif;
 }
 
-
 .scene-locals h1 {
-    color: #bae7ff;
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 800;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 0.08em;
-    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+  color: #bae7ff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
 }
 
 .scene-locals h2 {
-    color: #bae7ff;
-    font-size: 1.8rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 20px;
+  color: #bae7ff;
+  font-size: 1.8rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
 }
 
 .scene-introduction,
 .dialogue-scene,
 .scene-conclusion {
-    max-width: 900px;
-    margin: 0 auto 45px;
+  max-width: 900px;
+  margin: 0 auto 45px;
 }
 
 .scene-introduction p,
 .scene-conclusion p {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    text-align: center;
-    color: #e8f5ff;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #e8f5ff;
 }
-
 
 .dialogue-scene {
-    padding: 35px;
-    background: rgba(9, 97, 148, 0.25);
-    border: 1px solid rgba(220, 245, 255, 0.65);
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  padding: 35px;
+  background: rgba(9, 97, 148, 0.25);
+  border: 1px solid rgba(220, 245, 255, 0.65);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
 }
 
-
 .dialogue {
-    background: rgba(14, 55, 47, 0.25);
-    border-left: 4px solid #bae7ff;
-    border-radius: 8px;
-    padding: 20px 25px;
-    margin-top: 20px;
-    transition: background 0.3s ease, transform 0.3s ease;
+  background: rgba(14, 55, 47, 0.25);
+  border-left: 4px solid #bae7ff;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-top: 20px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .dialogue:hover {
-    background: rgba(2, 253, 203, 0.263);
-    transform: translateX(5px);
+  background: rgba(2, 253, 203, 0.263);
+  transform: translateX(5px);
 }
 
 .dialogue strong {
-    color: #ffffff;
-    font-size: 1rem;
-    letter-spacing: 0.12em;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
 }
 
 .dialogue p {
-    line-height: 1.7;
-    font-size: 1.05rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
-
 
 .scene-conclusion {
-    text-align: center;
+  text-align: center;
 }
-
 
 .scene-conclusion a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 
-    margin-top: 30px;
-    padding: 16px 35px;
+  margin-top: 30px;
+  padding: 16px 35px;
 
-    background: #bae7ff;
-    color: #071725;
+  background: #bae7ff;
+  color: #071725;
 
-    border: 2px solid #bae7ff;
-    border-radius: 40px;
+  border: 2px solid #bae7ff;
+  border-radius: 40px;
 
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 1rem;
-    font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1rem;
+  font-weight: 800;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 
 .scene-conclusion a::after {
-    content: "➜";
-    font-size: 1.3rem;
+  content: "➜";
+  font-size: 1.3rem;
 }
 
-
 .scene-conclusion a:hover {
-    background: transparent;
-    color: #bae7ff;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(186, 231, 255, 0.2);
+  background: transparent;
+  color: #bae7ff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(186, 231, 255, 0.2);
 }
 
 @media (max-width: 600px) {
+  .scene-locals {
+    padding: 35px 15px;
+    background-attachment: scroll;
+  }
 
-    .scene-locals {
-        padding: 35px 15px;
-        background-attachment: scroll;
-    }
+  .dialogue-scene {
+    padding: 20px;
+  }
 
-    .dialogue-scene {
-        padding: 20px;
-    }
+  .dialogue {
+    padding: 15px;
+  }
 
-    .dialogue {
-        padding: 15px;
-    }
+  .scene-introduction p,
+  .scene-conclusion p {
+    font-size: 1rem;
+  }
+}
 
-    .scene-introduction p,
-    .scene-conclusion p {
-        font-size: 1rem;
-    }
+/* Reuse the Day 2 visual style on the other story pages. */
+.scene01,
+.scene03,
+.scene04,
+.scene05,
+.scene06,
+.scene07,
+.scene-bernard,
+.scene-annonce-contest,
+.scene-groupe-final,
+body > section[class^="scene-groupe-final-"] {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(7, 153, 221, 0.58), rgba(33, 6, 241, 0.63)),
+    url("assets/backgrounds/mountain.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+}
 
+.scene01 h1,
+.scene03 h1,
+.scene04 h1,
+.scene05 h1,
+.scene06 h1,
+.scene07 h1,
+.scene-bernard h1,
+.scene-annonce-contest h1,
+.scene-groupe-final h1,
+body > section[class^="scene-groupe-final-"] h1 {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  color: #bae7ff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.scene01 p,
+.scene03 p,
+.scene04 p,
+.scene05 p,
+.scene06 p,
+.scene07 p,
+.scene-bernard p,
+.scene-annonce-contest p,
+.scene-groupe-final p,
+body > section[class^="scene-groupe-final-"] p {
+  box-sizing: border-box;
+  width: min(900px, 100%);
+  margin: 0 auto 30px;
+  padding: 35px;
+  border: 1px solid rgba(220, 245, 255, 0.65);
+  border-radius: 20px;
+  background: rgba(9, 97, 148, 0.25);
+  color: #e8f5ff;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.scene01 a,
+.scene03 a,
+.scene04 a,
+.scene05 a,
+.scene06 a,
+.scene07 a,
+.scene-bernard a,
+.scene-annonce-contest a,
+.scene-groupe-final a,
+body > section[class^="scene-groupe-final-"] a {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 16px 35px;
+  border: 2px solid #bae7ff;
+  border-radius: 40px;
+  background: #bae7ff;
+  color: #071725;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.scene01 a:hover,
+.scene03 a:hover,
+.scene04 a:hover,
+.scene05 a:hover,
+.scene06 a:hover,
+.scene07 a:hover,
+.scene-bernard a:hover,
+.scene-annonce-contest a:hover,
+.scene-groupe-final a:hover,
+body > section[class^="scene-groupe-final-"] a:hover {
+  background: transparent;
+  color: #bae7ff;
+  transform: translateY(-4px);
+}
+
+.scene01 input {
+  box-sizing: border-box;
+  width: min(420px, 90vw);
+  margin: 0 0 20px;
+  padding: 16px 20px;
+  border: 1px solid rgba(220, 245, 255, 0.8);
+  border-radius: 12px;
+  background: rgba(9, 97, 148, 0.35);
+  color: white;
+  font: inherit;
+}
+
+.scene01 input::placeholder {
+  color: #e8f5ff;
+}
+
+@media (max-width: 600px) {
+  .scene01,
+  .scene03,
+  .scene04,
+  .scene05,
+  .scene06,
+  .scene07,
+  .scene-bernard,
+  .scene-annonce-contest,
+  .scene-groupe-final,
+  body > section[class^="scene-groupe-final-"] {
+    padding: 35px 15px;
+    background-attachment: scroll;
+  }
+
+  .scene01 p,
+  .scene03 p,
+  .scene04 p,
+  .scene05 p,
+  .scene06 p,
+  .scene07 p,
+  .scene-bernard p,
+  .scene-annonce-contest p,
+  .scene-groupe-final p,
+  body > section[class^="scene-groupe-final-"] p {
+    padding: 20px;
+    font-size: 1rem;
+  }
 }
